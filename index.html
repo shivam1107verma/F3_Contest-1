@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Adding Employees</title>
+    <style>
+        h1{
+            background-color: black;
+            color: whitesmoke;
+            /* width: fit-content; */
+            padding-left: 40%;
+            
+        }
+    </style>
+</head>
+<body>
+        <h1>Adding Employees</h1>
+
+        <div class="form">
+            <div>
+                <label for="name">Enter name : </label>
+                <br>
+                <input type="text" id="name" placeholder="Employee name">
+            </div>
+            <div>
+                <label for="profesion">Enter Proffesion : </label>
+                <br>
+                <input type="text" id="profession" placeholder="Employee Proffesion">
+            </div>
+            <div>
+                <label for="age">Enter Age : </label>
+                <br>
+                <input type="number" id="age" placeholder="Employee Age"  min="1">
+            </div>
+        </div>
+
+        <button class="add" onclick="fetchData()">✎  Add user</button>
+
+        <div class="message">
+            <p>message</p>
+        </div>
+        <h3>Addes Employees</h3>
+
+        <h4 id="default">You have 0 employess</h4>
+
+        <div id="emp-list">
+            <!-- // adding data dynamically by user -->
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
